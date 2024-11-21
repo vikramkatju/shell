@@ -45,6 +45,7 @@ cp ./data/raw/server_log_*.log ./data/processed/server_logs
 # 6. Repeat the above step for user logs and event logs
 
 cp ./data/raw/user_log_*.log ./data/processed/user_logs
+cp ./data/raw/user_ipaddr_*.log ./data/processed/user_logs
 cp ./data/raw/event_log_*.log ./data/processed/event_logs
 
 
