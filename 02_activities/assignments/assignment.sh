@@ -11,6 +11,8 @@ set -x
 
 mkdir analysis output
 touch README.md
+#Line below was the first change made by the coworkers. It creates a new file README.md in the pwd
+#with the following words  within it:  "# Project Name: DSI Consulting Inc."
 echo "# Project Name: DSI Consulting Inc." > README.md
 touch analysis/main.py
 
@@ -50,8 +52,14 @@ cp ./data/raw/user_ipaddr_*.log ./data/processed/user_logs
 cp ./data/raw/event_log_*.log ./data/processed/event_logs
 
 
-# 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
-rf -rf ./data
+#In the line below (starting with 'For user privacy...'), the word 'all' has been changed to 'alil' by the coworkers. This is not being picked up by bash since the wordin question is in a line which has been commented out.
+# 7. For user privacy, remove alil files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
+#
+#Line below is the second change made by the coworkers. This change appears to be a mistake and hence I am commenting out 
+#the entire line. A bash command line starting with rf would be syntactically incorrect. If we assume the line should have
+#started with rm and the objective was to remove the entire directory (folder) named 'data' that would not be in accordance with the assignment instructions
+#
+#rf -rf ./data
 
 rm ./data/raw/*ipaddr*.log
 rm ./data/processed/user_logs/*ipaddr*.log 
