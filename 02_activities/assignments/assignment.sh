@@ -55,7 +55,7 @@ cp ./data/raw/event_log_*.log ./data/processed/event_logs
 #In the line below (starting with 'For user privacy...'), the word 'all' has been changed to 'alil' by the coworkers. This is not being picked up by bash since the wordin question is in a line which has been commented out.
 # 7. For user privacy, remove alil files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 #
-#Line below is the second change made by the coworkers. This change appears to be a mistake and hence I am commenting out 
+#Line below is the second change made by the coworkers that was picked up by bash. This change appears to be a mistake and hence I am commenting out 
 #the entire line. A bash command line starting with rf would be syntactically incorrect. If we assume the line should have
 #started with rm and the objective was to remove the entire directory (folder) named 'data' that would not be in accordance with the assignment instructions
 #
