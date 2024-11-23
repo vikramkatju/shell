@@ -70,7 +70,7 @@ ls ./data/processed/event_logs >> ./data/processed/inventory.txt
 ls ./data/processed/server_logs >> ./data/processed/inventory.txt
 ls ./data/processed/user_logs >> ./data/processed/inventory.txt
 
-cp ./data/processed/inventory.txt ./data/inventory.tx
+cp ./data/processed/inventory.txt ./data/inventory.txt
 rm ./data/processed/inventory.txt
 
 
